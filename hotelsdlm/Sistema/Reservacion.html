@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senda de la Montaña</title>
+    <link type="text/css" href="CSS/reservesti.css" rel="stylesheet">
+<div id="cabeza">
+    <img src="Images/Icono.png" width="8%">
+        <ul id="menu">
+        <li><a href="menu.php">Inicio</a></li>
+        <li>
+            <a href="Reservacion.html">Reservaciones</a>
+        </li>
+        <li><a href="habitaciones.php">Habitaciones</a>
+        </li>
+        <li><a href="Servicios.html">Servicios</a>
+        </li>
+        <li><a href="Inicio.html">LogOut</a>
+        </li>
+    </ul>
+</div>
+</head>
+<body id="contenido">
+    <form action="reservarbeta.php" method="post">
+    <div id="Desc">
+<h1>RESERVACIONES</h1>
+<img src="Images/Reserva2.png" width="25%">
+
+<div id="Extras">
+    <h2>Servicios Extra (Opcional)</h2>
+    <p><input type="checkbox" id="cbox" value="second_checkbox"> Desayuno</p> <select id="seleccio">
+        <option value="1">Tradicional</option>
+        <option value="1">Norteamericano</option>
+        <option value="1">De la region</option>
+        <option value="1">Ejecutivo</option>
+        <option value="1" selected>(Vacio)</option>
+      </select>
+      <br/>
+      <br/>
+    <p><input type="checkbox" id="cbox" value="second_checkbox"> Alquiler de Auto</p>
+    <select id="seleccio">
+        <option value="1">Toyota</option>
+        <option value="1">Nissan</option>
+        <option value="1">Honda</option>
+        <option value="1" selected>(Vacio)</option>
+      </select>
+    <br/>
+    <br/>
+    <p><input type="checkbox" id="cbox" value="second_checkbox"> Transporte</p> <select id="selct1">
+        <option value="1">Aeropuerto</option>
+        <option value="1">Hotel</option>
+        <option value="1">Capital</option>
+        <option value="1">Ciudad Aledaña</option>
+    </select>
+        <br/>
+        <br/>
+        <h3>Hacia</h3>
+        <br/>
+        <select id="selecciontr2">
+            <option value="value1">Aeropuerto</option>
+            <option value="value2" selected>Hotel</option>
+            <option value="value3">Capital</option>
+            <option value="value3">Ciudad Aledaña</option>
+              </select>
+      
+    
+    </div>
+<h2>Habitaciones</h2>
+<select name="selecto">
+  <option value="1" selected>Individual</option>
+  <option value="2">Doble</option>
+  <option value="3">Triple</option>
+  <option value="4">Cuadruple</option>
+</select>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>Fecha de llegada</h2>
+<input type="date" id="start" name="trip-start"
+       value=""
+       min="2022-01-01" max="2024-12-31">
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>Fecha de salida</h2>
+<input type="date" id="startt" name="trip-start"
+       value=""
+       min="2022-01-01" max="2025-12-31">
+       <br/>
+<br/>
+<input class="buttons" type="submit" name="" value="Realizar Reservacion">
+</div>
+</form>
+</body>
+<footer>
+
+
+</footer>
+</html>
